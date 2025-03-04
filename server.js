@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: "https://gaming-frontend-gilt.vercel.app",
     credentials: true,
   })
 );
@@ -84,3 +84,31 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
+
+
+
+// post url
+
+// body {
+//   sessionTicket: ________,
+//   playFabID: _________,
+//   username: __________,
+//   email: ___________,
+
+
+
+
+//  type: __________,
+//  time: ___________,
+//  price: ___________
+// }
+
+
+// response: {
+//   success: true,
+//   
+//   message: "User data updated successfully",
+//   data: {
+//     username: "newUsername",
+//   }
